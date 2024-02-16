@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>산술 연산
+        <ul>
+            <li>10 + 2 = <span th:text="10 + 2"></span></li>
+            <li>10 % 2 == 0 = <span th:text="10 % 2 == 0"></span></li>
+        </ul>
+    </li>
+    <li>비교 연산
+        <ul>
+            <li>1 > 10 = <span th:text="1 &gt; 10"></span></li>
+            <li>1 gt 10 = <span th:text="1 gt 10"></span></li>
+            <li>1 >= 10 = <span th:text="1 >= 10"></span></li>
+            <li>1 ge 10 = <span th:text="1 ge 10"></span></li>
+            <li>1 == 10 = <span th:text="1 == 10"></span></li>
+            <li>1 != 10 = <span th:text="1 != 10"></span></li>
+        </ul>
+    </li>
+    <li>조건식
+        <ul>
+            <li>(10 % 2 == 0)? '짝수':'홀수' = <span th:text="(10 % 2 == 0)? '짝수':'홀수'"></span></li>
+        </ul>
+    </li>
+    <li>
+        Elvis 연산자
+        <!--
+        null 체크를 간단하게 수행할 수 있는 연산자로
+        ?:로 표현되며, 변수가 null이 아닌 경우에는 변수 값을 반환하고, null인 경우에는 우측에 지정된 기본값을 반환
+        -->
+        <ul>
+            <li>${data}?: '데이터가 없습니다.' = <span th:text="${data}?: '데이터가 없습니다.'"></span></li>
+            <li>${nullData}?: '데이터가 없습니다.' = <span th:text="${nullData}?: '데이터가 없습니다.'"></span></li>
+        </ul>
+    </li>
+    <li>
+        No-Operation
+        <!-- 해당 데이터가 존재하거나 참이거나 하면 실행 아니면 아에 실행되지 않음 -->
+        <ul>
+            <li>${data}?: _ = <span th:text="${data}?: _">데이터가 없습니다.</span></li>
+            <li>${nullData}?: _ = <span th:text="${nullData}?: _">데이터가 없습니다.</span></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
