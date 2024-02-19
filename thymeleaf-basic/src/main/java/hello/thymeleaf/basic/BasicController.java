@@ -22,6 +22,7 @@ public class BasicController {
     @GetMapping("/text-basic")
     public String textBasic(Model model) {
         model.addAttribute("data", "Hello Spring!");
+        System.out.println("한글이 나올ㄲ요??");
         return "basic/text-basic";
     }
     @GetMapping("/text-unescaped")
@@ -125,6 +126,7 @@ public class BasicController {
         addUsers(model);
         return "basic/javascript";
     }
+
 
     //======================================================================//
     private void addUsers(Model model) {
