@@ -1,0 +1,4 @@
+m17:18:32.836 [Test worker] INFO hello.typeconverter.converter.StringToIntegerConverter -- convert source=10
+m17:18:32.861 [Test worker] INFO hello.typeconverter.converter.IntegerToStringConverter -- convert source=10
+x17:18:32.862 [Test worker] INFO hello.typeconverter.converter.StringToIpPortConverter -- convert source=127.0.0.1:8080
+’17:18:32.863 [Test worker] INFO hello.typeconverter.converter.IpPortToStringConverter -- convert source=hello.typeconverter.type.IpPort@59cb0946

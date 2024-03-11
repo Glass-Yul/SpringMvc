@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.typeconverter.converter.ConversionServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-11T08:18:32" hostname="DESKTOP-6TVLGBC" time="0.078">
+  <properties/>
+  <testcase name="conversionService()" classname="hello.typeconverter.converter.ConversionServiceTest" time="0.078"/>
+  <system-out><![CDATA[17:18:32.836 [Test worker] INFO hello.typeconverter.converter.StringToIntegerConverter -- convert source=10
+17:18:32.861 [Test worker] INFO hello.typeconverter.converter.IntegerToStringConverter -- convert source=10
+17:18:32.862 [Test worker] INFO hello.typeconverter.converter.StringToIpPortConverter -- convert source=127.0.0.1:8080
+17:18:32.863 [Test worker] INFO hello.typeconverter.converter.IpPortToStringConverter -- convert source=hello.typeconverter.type.IpPort@59cb0946
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
